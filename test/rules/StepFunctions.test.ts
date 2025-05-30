@@ -50,7 +50,7 @@ describe('AWS Step Functions', () => {
         ),
         logs: {
           level: LogLevel.ALL,
-          destination: new LogGroup(stack, 'rSfnLog'),
+          destination: new LogGroup(stack, 'SfnLog'),
         },
       });
       validateStack(stack, ruleId, TestType.COMPLIANCE);
